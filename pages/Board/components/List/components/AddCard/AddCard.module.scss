@@ -1,0 +1,40 @@
+.addContainer {
+  display: flex;
+  align-items: center;
+}
+
+.addBtn {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  &:hover {
+    background-color: #091e4214;
+  }
+}
+
+.symbol {
+  font-size: 1rem;
+  color: #44546f;
+  margin-right: 0.5rem;
+}
+
+.primary {
+  padding: .5rem 1rem;
+  margin-top: .25rem;
+  border: none;
+  border-radius: .25rem;
+  cursor: pointer;
+  color: white;
+  background-color: #0C66E4;
+}
+
+.exit {
+  color: #667389;
+  margin-left: .5rem;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    color:black;
+  }
+}
