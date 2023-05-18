@@ -1,0 +1,29 @@
+@import "../../../../app/globals.scss";
+
+.addContainer {
+  display: flex;
+  flex-direction: column;
+  @include hover();
+  padding: $padding-md $padding-lg;
+  border-radius: $radius-md;
+  background-color: $light-gray;
+  min-width: 20rem;
+  align-self: start;
+  span {
+    color: $dark-gray;
+    font-weight: $font-bold;
+    &:hover {
+      color: black;
+    }
+  }
+  input {
+    border: none;
+    padding: $padding-md $padding-lg;
+    border-radius: $radius-md;
+    margin-bottom: $margin-md;
+    &:focus {
+      outline: none !important;
+      border: 2px solid $ternary;
+    }
+  }
+}
