@@ -1,40 +1,62 @@
+@import "../../../../../../app/globals.scss";
+
 .addContainer {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  @include hover();
+  border-radius: $radius-md;
+  min-width: 20rem;
+  max-width: 100%;
+  align-self: flex-end;
+  span {
+    color: $dark-gray;
+    font-weight: $font-bold;
+    &:hover {
+      color: black;
+    }
+  }
+  input {
+    border: none;
+    padding: $padding-md $padding-lg;
+    border-radius: $radius-md;
+    margin-bottom: $margin-md;
+    &:focus {
+      outline: none !important;
+      border: 2px solid $ternary;
+    }
+  }
 }
 
 .addBtn {
-  padding: 0.5rem;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
+  @include hover();
+  padding: $padding-md;
+  border-radius: $radius-md;
   &:hover {
-    background-color: #091e4214;
+    background-color: darken($light-gray, 10%);
   }
 }
 
 .symbol {
-  font-size: 1rem;
+  font-size: $font-sm;
   color: #44546f;
-  margin-right: 0.5rem;
+  margin-right: $margin-md;
 }
 
 .primary {
-  padding: .5rem 1rem;
-  margin-top: .25rem;
-  border: none;
-  border-radius: .25rem;
-  cursor: pointer;
+  @include hover();
+  padding: $padding-md $padding-lg;
+  margin-top: $margin-sm;
+  border-radius: $radius-sm;
   color: white;
-  background-color: #0C66E4;
+  background-color: $ternary;
 }
 
 .exit {
-  color: #667389;
-  margin-left: .5rem;
-  font-weight: bold;
-  cursor: pointer;
+  @include hover();
+  color: $dark-gray;
+  margin-left: $margin-md;
+  font-weight: $font-bold;
   &:hover {
-    color:black;
+    color: black;
   }
 }
